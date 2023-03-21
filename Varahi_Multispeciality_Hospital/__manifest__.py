@@ -1,11 +1,12 @@
 {
-    'name': 'Hospital Managment System',
+    'name': 'Varahi Hospital Managment System',
     'version': '1.0.0',
     'category': 'Managment',
-    'author': 'Prefortune Softweb Solution',
+    'author': 'Prefortune Softweb Solution, Rushiraj',
     'sequence': -200,
     'summary': 'Hospital Managment System',
     'description': """Handle Hospital Records With Minimum Effort""",
+    'license': 'LGPL-3',
     'depends': [
         'mail',
     ],
