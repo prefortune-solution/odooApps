@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hospital_patient_sequence" model="ir.sequence">
+        <field name="name">Hospital Patient Sequence</field>
+        <field name="code">hospital.patient.sequence</field>
+        <field name="prefix">VMSH-P</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="hospital_employee_sequence" model="ir.sequence">
+        <field name="name">Hospital Employee Sequence</field>
+        <field name="code">hospital.employee.sequence</field>
+        <field name="prefix">VMSH-Emp</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+    <record id="hospital_doctor_sequence" model="ir.sequence">
+        <field name="name">Hospital Doctor Sequence</field>
+        <field name="code">hospital.doctor.sequence</field>
+        <field name="prefix">VMSH-Doc</field>
+        <field name="padding">5</field>
+        <field name="company_id" eval="False"/>
+    </record>
+
+</odoo>

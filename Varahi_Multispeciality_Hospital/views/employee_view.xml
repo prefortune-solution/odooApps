@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Form View -->
+    <record id="view_hospital_employee_form" model="ir.ui.view">
+        <field name="name">hospital.employee.form</field>
+        <field name="model">hospital.employee</field>
+        <field name="arch" type="xml">
+            <form string="hospital_employee_form">
+                <sheet>
+                <div class="row align-items-center">
+                    <div class="col-md-6"><h4 class="firstbold"><field name="ref" readonly="1"/></h4></div>
+                    <div class="col-md-6"><field name="emp_img" widget="image" class="oe_avatar"/></div>
+                </div>
+                    <group string="Basic Information">
+                        <group>
+                            <field name="first_name"/>
+                            <field name="middle_name"/>
+                            <field name="last_name"/>
+                            <field name="date_of_birth"/>
+                            <field name="age"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                            <field name="phone"/>
+                            <field name="active" invisible="1"/>
+                        </group>    
+                    </group>
+                    <group string="Address Information">
+                        <group>
+                            <field name="address"/>
+                            <field name="city"/>
+                        </group>  
+                         <group>
+                            <field name="pin_code"/>
+                        </group>  
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+<!-- Tree View -->
+    <record id="view_hospital_employee_tree" model="ir.ui.view">
+        <field name="name">hospital.employee.tree</field>
+        <field name="model">hospital.employee</field>
+        <field name="arch" type="xml">
+            <tree string="hospital_employee_tree">
+                <field name="name"/>
+                <field name="date_of_birth"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="phone"/> 
+                <field name="ref"/>      
+            </tree>
+        </field>
+    </record>
+<!-- Search View -->
+    <record id="view_hospital_employee_search" model="ir.ui.view">
+        <field name="name">hospital.employee.search</field>
+        <field name="model">hospital.employee</field>
+        <field name="arch" type="xml">
+            <search string="hospital_employee_search">
+            
+            </search>
+        </field>
+    </record>
+<!-- Action -->
+    <record id="action_hospital_employee" model="ir.actions.act_window">
+        <field name="name">Hospital Employee</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.employee</field>
+        <field name="view_mode">tree,kanban,form</field> 
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                create a employee!!!!!!
+            </p>
+        </field>
+    </record>
+<!-- Menu -->
+    <menuitem id="hospital_employee_menu"
+        name="Employees"
+        sequence="0"
+        parent="hospital_employee_root_menu"
+        action="action_hospital_employee"/>
+</odoo>

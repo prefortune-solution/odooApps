@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.hospital.patient,access_hospital_patient,Varahi_Multispeciality_Hospital.model_hospital_patient,base.group_user,1,1,1,1
+access.hospital.doctor,access_hospital_doctor,Varahi_Multispeciality_Hospital.model_hospital_doctor,base.group_user,1,1,1,1
+access.hospital.appointment,access_hospital_appointment,Varahi_Multispeciality_Hospital.model_hospital_appointment,base.group_user,1,1,1,1
+access.hospital.employee,access_hospital_employee,Varahi_Multispeciality_Hospital.model_hospital_employee,base.group_user,1,1,1,1
+access.hospital.pharmacy,access_hospital_pharmacy,Varahi_Multispeciality_Hospital.model_hospital_pharmacy,base.group_user,1,1,1,1
+access.hospital.appointment.pharmacy,access_hospital_appointment_pharmacy,Varahi_Multispeciality_Hospital.model_hospital_appointment_pharmacy,base.group_user,1,1,1,1
